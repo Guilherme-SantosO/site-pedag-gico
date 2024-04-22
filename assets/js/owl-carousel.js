@@ -2961,27 +2961,10 @@
 	 * @todo Rename `slideBy` to `navBy`
 	 */
 	Navigation.Defaults = {
-		nav: false,
-		navText: [
-			'<span aria-label="' + 'Previous' + '">&#x2039;</span>',
-			'<span aria-label="' + 'Next' + '">&#x203a;</span>'
-		],
-		navSpeed: false,
-		navElement: 'button type="button" role="presentation"',
-		navContainer: false,
-		navContainerClass: 'owl-nav',
+		navText: [],
 		navClass: [
-			'owl-prev',
-			'owl-next'
+			slideBy=2,
 		],
-		slideBy: 1,
-		dotClass: 'owl-dot',
-		dotsClass: 'owl-dots',
-		dots: true,
-		dotsEach: false,
-		dotsData: false,
-		dotsSpeed: false,
-		dotsContainer: false
 	};
 
 	/**
@@ -3012,12 +2995,7 @@
 			}, this));
 
 		// create DOM structure for absolute navigation
-		if (!settings.dotsData) {
-			this._templates = [ $('<button role="button">')
-				.addClass(settings.dotClass)
-				.append($('<span>'))
-				.prop('outerHTML') ];
-		}
+
 
 		this._controls.$absolute = (settings.dotsContainer ? $(settings.dotsContainer)
 			: $('<div>').addClass(settings.dotsClass).appendTo(this.$element)).addClass('disabled');

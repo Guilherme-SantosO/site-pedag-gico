@@ -130,7 +130,7 @@
 	  })
 
 	$('.owl-courses-item').owlCarousel({
-		items:4,
+		items:1,
 		loop:true,
 		dots: true,
 		nav: true,

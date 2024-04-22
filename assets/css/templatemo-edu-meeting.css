@@ -91,7 +91,7 @@ html, body {
 
 a {
   text-decoration: none !important;
-  color: #3CF;
+  color: #f5a425;
 }
 
 a:hover {
@@ -972,6 +972,11 @@ section.upcoming-meetings .categories .main-button-red a {
   border-radius: 10px;
 }
 
+span{
+  display: flex;
+  text-align: center;
+}
+
 .meeting-item .down-content {
   background-color: #fff;
   padding: 30px;
@@ -1122,7 +1127,7 @@ section.our-courses {
 
 .our-courses .item .down-content h4 {
   padding: 25px;
-  font-size: 18px;
+  font-size: 17px;
   color: #1f272b;
   text-align: center; 
   border-bottom: 1px solid #eee;
@@ -1144,7 +1149,7 @@ section.our-courses {
 
 .our-courses .item .down-content .info span {
   color: #a12c2f;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 600;
   text-align: right;
   display: inline-block;
@@ -1291,6 +1296,13 @@ section.our-facts h2 {
     font-weight: 700;
     font-size: 36px;
 }
+
+.teste{
+  margin: 5px 0px;
+  color: #f5a425;
+  font-weight: 700;
+  font-size: 36px;
+}
 .count-title {
     font-size: 18px;
     font-weight: 500;
@@ -1332,6 +1344,8 @@ section.contact-us {
   background-size: cover;
   padding: 140px 0px 0px 0px;
 }
+
+
 
 section.contact-us #contact {
   background-color: #fff;
@@ -1404,9 +1418,16 @@ section.contact-us .right-info {
   padding: 40px;
 }
 
+
+.right-info{
+  margin-top: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
 section.contact-us .right-info ul li {
   display: inline-block;
-  border-bottom: 1px solid rgba(250,250,250,0.15);
+   border-bottom: 1px solid rgba(250,250,250,0.15);
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
@@ -1519,6 +1540,13 @@ section.meetings-page .filters li {
   margin: 0px 3px;
 }
 
+#messi{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 section.meetings-page .filters ul li.active,
 section.meetings-page .filters ul li:hover {
   background-color: #a12c2f;
@@ -1530,6 +1558,7 @@ section.meetings-page .pagination {
   width: 100%;
   margin-top: 30px;
   display: inline-block;
+
 }
 
 section.meetings-page .pagination ul li {
@@ -1694,6 +1723,11 @@ section.meetings-page .pagination ul li a:hover {
 	.templatemo-item-col {
 		width: 100%;
 	}
+
+  #messi{
+    display:disable;
+    margin:20%;
+  }
 }
 
 /* 
@@ -1715,6 +1749,8 @@ responsive
   .our-courses .owl-nav .owl-prev{
     left: -25px;
   }
+
+  
 }
 
 @media (max-width: 1200px) {
@@ -1730,6 +1766,8 @@ responsive
   .our-courses .owl-nav .owl-prev{
     left: -65px;
   }
+
+  
 }
 
 @media (max-width: 1085px) {
@@ -1745,6 +1783,7 @@ responsive
   .our-courses .owl-nav .owl-prev{
     left: -25px;
   }
+
 }
 
 @media (max-width: 1005px) {
@@ -1759,7 +1798,9 @@ responsive
   }
   .our-courses .owl-nav .owl-prev{
     display: none;
+
   }
+
 }
 
 @media (max-width: 992px) {
@@ -1808,6 +1849,12 @@ responsive
     margin-bottom: 30px;
   }
 
+  #messi{
+    display:disable;
+    margin:20%;
+
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1828,4 +1875,17 @@ responsive
     color: #1f272b;
   }
 
+  #messi{
+    display:disable;
+    margin:20%;
+    
+  }
+
+}
+
+@media (max-width: 653px){
+  #messi{
+    display:disable;
+    margin:20%;
+  }
 }
