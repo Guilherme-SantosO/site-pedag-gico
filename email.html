@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Email</title>
+</head>
+<body>
+    <h2>Enviar Email</h2>
+    <form id="emailForm">
+        <label for="remetente">Seu Email:</label><br>
+        <input type="email" id="remetente" name="remetente"><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br>
+        <label for="destinatario">Destinatário:</label><br>
+        <input type="email" id="destinatario" name="destinatario"><br>
+        <label for="assunto">Assunto:</label><br>
+        <input type="text" id="assunto" name="assunto"><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
+        <button type="button" onclick="enviarEmail()">Enviar</button>
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function enviarEmail() {
+            var remetente = document.getElementById('remetente').value;
+            var senha = document.getElementById('senha').value;
+            var destinatario = document.getElementById('destinatario').value;
+            var assunto = document.getElementById('assunto').value;
+            var mensagem = document.getElementById('mensagem').value;
+
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : remetente,
+                Password : senha,
+                To : destinatario,
+                From : remetente,
+                Subject : assunto,
+                Body : mensagem
+            }).then(
+                message => alert("Email enviado com sucesso!")
+            );
+        }
+    </script>
+</body>
+</html>
