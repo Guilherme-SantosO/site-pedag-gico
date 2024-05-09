@@ -44,6 +44,12 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -335,7 +341,7 @@ header
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #fff;
   -webkit-transition: all 0.3s ease 0s;
@@ -1056,10 +1062,14 @@ section.apply-now .item p {
 }
 
 .accordions {
+  display: grid;
+  place-items: center;
   border-radius: 20px;
   padding: 40px;
-  background-color: #fff;
-  margin-left: 45px;
+  background-color: #ffffff;
+
+  margin: 0 auto;
+
 }
 .accordions .accordion {
   border-bottom: 1px solid #eee;
@@ -1072,9 +1082,9 @@ section.apply-now .item p {
   font-size: 18px;
   font-weight: 700;
   color: #1f272b;
-  cursor: pointer;
   transition: color 200ms ease-in-out;
   border-bottom: 1px solid #fff;
+  
 }
 @media screen and (min-width: 768px) {
   .accordion-head {
@@ -1414,7 +1424,7 @@ section.contact-us #contact button:hover {
 
 section.contact-us .right-info {
   background-color: #a12c2f;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 40px;
 }
 
@@ -1546,7 +1556,12 @@ section.meetings-page .filters li {
   margin-left: 100px;
   margin-right: 100px;
 }
-
+#cr7{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 section.meetings-page .filters ul li.active,
 section.meetings-page .filters ul li:hover {
   background-color: #a12c2f;
@@ -1736,7 +1751,7 @@ responsive
 --------------------------------------------- 
 */
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .services .owl-nav .owl-next{
     right: -30px;
   }
@@ -1888,4 +1903,21 @@ responsive
     display:disable;
     margin:20%;
   }
+}
+
+.sub-header{
+  display: none;
+}
+
+
+.accordions-is-first-expanded{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.col-lg-6{
+margin: 0 auto;
 }
