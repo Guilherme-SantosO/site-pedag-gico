@@ -190,5 +190,10 @@
 .col-4{
   display: none;
 }
+.price{
+  display: none;
+}
 
-
+.date2{
+  display: none;
+}
