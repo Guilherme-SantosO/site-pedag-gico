@@ -946,7 +946,7 @@ section.upcoming-meetings .categories .main-button-red {
 }
 
 section.upcoming-meetings .categories .main-button-red a {
-  width: 100%;
+  width: 50%;
   text-align: center;
 }
 
@@ -1619,6 +1619,7 @@ section.meetings-page .pagination ul li a:hover {
 .meeting-single-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+
 }
 
 .meeting-single-item .thumb .price {
@@ -1728,6 +1729,7 @@ section.meetings-page .pagination ul li a:hover {
 /* Meeting item column */
 .templatemo-item-col {
 	width: 31%;
+  back
 }
 
 @media (max-width: 992px) {
@@ -1898,6 +1900,14 @@ responsive
     
   }
 
+  .templatemo-item-col{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+
 }
 
 @media (max-width: 653px){
@@ -1923,3 +1933,7 @@ align-items: center;
 .col-lg-6{
 margin: 0 auto;
 }
+
+
+
+
