@@ -1934,6 +1934,6 @@ margin: 0 auto;
 }
 
 .templatemo-item-col{
-  display: inline;
+  display: inline-block;
 }
 
