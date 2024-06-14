@@ -1954,3 +1954,15 @@ margin: 0 auto;
 }
 
 }
+
+.classapp{
+  display: inline;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+.icon {
+  width: 20px; /* Ajuste o tamanho conforme necessário */
+  height: 20px; /* Garante que o ícone fique alinhado verticalmente com o texto */
+  display: inline; /* Garante que o ícone fique na mesma linha do texto */
+}
