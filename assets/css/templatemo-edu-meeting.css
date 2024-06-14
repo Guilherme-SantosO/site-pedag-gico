@@ -1430,7 +1430,7 @@ section.contact-us .right-info {
   border-radius: 30px;
   padding: 40px;
   margin: 0 auto;
-  
+  width: 
 
 }
 
@@ -1951,4 +1951,6 @@ margin: 0 auto;
 
 .downloads a img {
   max-width: 160px;
+}
+
 }
