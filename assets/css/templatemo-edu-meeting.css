@@ -1430,6 +1430,7 @@ section.contact-us .right-info {
   border-radius: 30px;
   padding: 40px;
   margin: 0 auto;
+  
 
 }
 
@@ -1940,4 +1941,14 @@ margin: 0 auto;
 
 .templatemo-item-col{
   display: inline-block;
+}
+
+.downloads {
+  display: inline;
+  gap: 10px; /* Ajuste o valor conforme necessário */
+
+}
+
+.downloads a img {
+  max-width: 160px;
 }
